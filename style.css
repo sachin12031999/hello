@@ -1,74 +1,223 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&display=swap');
 
-html,body{
-    margin:0px;
-    height:100%;
-    font-family: 'Alumni Sans Inline One', cursive;
-  }
-  .bg_heart{
-    position:relative;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-   overflow:hidden;
-    background-image:url("https://c.tenor.com/gmvyJCtzqgEAAAAS/indian-flag-india.gif");
-    background-size:100% 100%;
-    z-index:-1;
-  }
-  
-  .container{
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    text-align:center;
-    color:white;
-    font-family:cursive;
-  }
-  
-  
-  .heart{
-    position:absolute;
-    top:-50%;
-    transform:rotate(-45deg);
-    -webkit-transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-    -m-transform:rotate(-45deg);
-  }
-  .heart:before{
-    position:absolute;
-    top:-50%;
-    left:0;
-    display:block;
-    content:"";
-    width:100%;
-    height:100%;
-    background:inherit;
-    border-radius:100%;
-  }
-  .heart:after{
-    position:absolute;
-    top:0;
-    right:-50%;
-    display:block;
-    content:"";
-    width:100%;
-    height:100%;
-    background:inherit;
-    border-radius:100%;
-  }
-  
-  @keyframes love {
-    0%{top:110%}
-  }
-  @-webkit-keyframes love {
-    0%{top:110%}
-  }
-  @-moz-keyframes love {
-    0%{top:110%}
-  }
-  @-ms-keyframes love {
-    0%{top:110%}
-  }
+body {
+   background-color: #fefafa;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    flex-direction: row; justify-content: center;
+    margin: 32px auto 0;
+    max-width: 935px;
+    padding-bottom: 32px;
+    width: 100%;
+   
+}
+
+.img{
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    background-image: url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png);
+    background-position: -46px 0;
+    background-size: 468.32px 634.15px;
+    -webkit-flex-basis: 380.32px;
+    -ms-flex-preferred-size: 380.32px;
+    /* flex-basis: 380.32px; */
+    height: 581.15px;
+    margin-bottom: 12px;
+    margin-right: 428px;
+    max-width: 40%;
+}
+.container{
+    border: 1px solid rgb(156, 153, 153);
+    height: 396px;
+    width: 290px;
+    margin-top: -580px;
+    margin-left: 439px;
+
+    background: white;
+}
+
+.insta_logo {
+    height: 60px;
+    margin-top: 9px;
+    /* width: 200px; */
+    cursor: pointer;
+    margin-left: 95px;
+}
+
+.email {
+    /* border: 1px solid red;
+height: 30px;
+width: 250px;
+margin-bottom: 5px;
+padding: 7px;
+margin-left: 15px;
+border-radius: 5%; */
+    margin-left: 20px;
+
+    padding: 9px;
+    background-color: whitesmoke;
+    width: 80%;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 19px;
+
+}
+
+.email:focus {
+    outline: none;
+    border-color: rgb(178, 178, 178);
+}
+
+::placeholder {
+    font-size: 11px;
+    color: rgb(173, 173, 173);
+}
+
+.password {
+    margin-top: 10px;
+}
+
+.container button {
+    background-color: #bce7fa;
+    border: none;
+    padding: 6px;
+    width: 87%;
+    margin-left: 21px;
+    color: white;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.or {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(191, 191, 191);
+}
+
+.or::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 110px;
+    background: rgb(191, 191, 191);
+    margin-top: 6px;
+    margin-left: -112px;
+
+}
+
+.or::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 110px;
+    background: rgb(191, 191, 191);
+    margin-top: 6px;
+    margin-left: 8px;
+
+}
+
+.facebook {
+    height: 17px;
+    width: 18px;
+    margin-left: 70px;
+    cursor: pointer;
+
+}
+
+.login-with-Facebook {
+    color: rgba(6, 36, 100, 0.825);
+    font-family: sans-serif;
+    margin-left: 95px;
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.forgot {
+    /* margin-left: 90px; */
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgb(6, 36, 100);
+}
+
+.dont {
+    border: 1px solid rgb(156, 153, 153);
+    margin-top: -58px;
+    text-align: center;
+    background: #ffff;
+    width: 290px;
+    margin-left: -13px;
+}
+
+span {
+    cursor: pointer;
+    color: rgb(31, 115, 217);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.get {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.photo {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo1 {
+    height: 40px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+/* .alllist{
+height: 30px;
+border: 1px solid red;
+width: 700px;
+
+}
+.list{
+display: flex;
+flex-direction:row;
+justify-content: center;
+
+} */
+.upper-footer{
+    /* list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: flex;
+    float: left;
+    min-width: 940px;
+    justify-content: space-between;
+   
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    justify-content: center;   
+     flex-direction: row;
+      */
+      /* list-style-type: none;
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: white;
+     color: black;
+     text-align: center; */
+
+}
+
+/* .upper-footer .unlist li {
+    display: inline-block;
+} */
